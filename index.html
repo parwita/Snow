@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinity Training Centre</title>
+    <link href="/assets/main.css" rel="stylesheet" />
+  </head>
+  <body class="bg-white font-public text-gray-800">
+    <!-- Header Navigation -->
+    <header class="bg-white fixed top-0 left-0 right-0 z-50 font-montserrat">
+      <div class="mx-auto px-4 py-4 flex items-center justify-end">
+        <!-- <div class="flex items-center space-x-4">
+        <img src="/logo.png" alt="Infinity Logo" class="w-10 h-10">
+        <span class="text-xl font-bold text-blue-800">Infinity Training Centre</span>
+      </div> -->
+        <nav class="hidden sm:flex space-x-6">
+          <a href="#" class="text-[15px] text-gray-700 hover:font-normal font-bold">Home</a>
+          <a href="#" class="text-[15px] text-gray-700 font-light hover:font-normal">About Us</a>
+          <a href="#" class="text-[15px] text-gray-700 font-light hover:font-normal">Infinity Kidz</a>
+          <a href="#" class="text-[15px] text-gray-700 font-light hover:font-normal">Gallery</a>
+          <a href="#" class="text-[15px] text-gray-700 font-light hover:font-normal">Login</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button id="menu-btn" class="relative w-9 h-7 flex flex-col justify-between md:hidden focus:outline-none">
+          <span class="block h-0.5 w-full bg-blue-700 transition-all duration-300"></span>
+          <span class="block h-0.5 w-full bg-blue-700 transition-all duration-300"></span>
+          <span class="block h-0.5 w-full bg-blue-700 transition-all duration-300"></span>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav id="mobile-menu" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out sm:hidden bg-white border-t border-gray-200">
+        <div class="flex flex-col space-y-4 px-4 py-6">
+          <a href="#" class="text-[15px] text-gray-700 font-bold">Home</a>
+          <a href="#" class="text-[15px] text-gray-700">About Us</a>
+          <a href="#" class="text-[15px] text-gray-700">Infinity Kidz</a>
+          <a href="#" class="text-[15px] text-gray-700">Gallery</a>
+          <a href="#" class="text-[15px] text-gray-700">Login</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative w-dvw h-dvh min-h-[768px] bg-gradient-to-r overflow-hidden">
+      <div class="w-full h-full block relative">
+        <div data-vbg="https://www.youtube.com/watch?v=eEpEeyqGlxA"></div>
+        <div class="w-full h-full absolute opacity-[0.87]" style="background-image: url(img/video-overlay.jpg)"></div>
+      </div>
+
+      <div class="w-full h-full absolute top-[60px] sm:top-0 flex sm:items-center">
+        <div class="max-w-6xl mx-auto px-4">
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <!-- LEFT CONTENT -->
+            <div class="max-w-[450px] flex gap-9 flex-row flex-wrap">
+              <img src="img/logo.png" alt="Chef Image" class="w-64 mt-8 md:mt-0 opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate" />
+              <h1 class="text-3xl md:text-[40px] tracking-tighter font-bold mb-2 text-white opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">Wujudkan Karier Internasionalmu di Dunia Hospitality</h1>
+              <p class="mb-6 font-montserrat text-[20px] font-light tracking-tighter text-white opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">Bersama Infinity Training Centre, jadilah profesional yang siap kerja di industri.</p>
+              <a href="#" class="bg-white text-gray-700 font-bold text-[18.7px] px-6 py-4 shadow block opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">DAFTAR SEKARANG!</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="h-full max-h-[600px] w-1/2 hidden sm:block opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">
+              <div class="h-full w-full pt-[50px]">
+                <img src="img/chef.png" alt="Chef Image" class="w-full h-auto object-cover" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Section -->
+    <!-- <section class="bg-white py-16">
+    <div class="max-w-6xl mx-auto px-4">
+      <h2 class="text-2xl font-bold mb-6">Kenapa harus pilih Infinity Training Centre?</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="grid grid-cols-2 gap-4">
+          <img src="/img1.jpg" alt="Training 1">
+          <img src="/img2.jpg" alt="Training 2">
+          <img src="/img3.jpg" alt="Training 3">
+          <img src="/img4.jpg" alt="Training 4">
+        </div>
+        <div>
+          <p class="mb-4">Dengan pelatihan langsung di dunia nyata, dukungan mentor profesional, dan peluang kerja ke luar negeri, Infinity membantumu melangkah pasti menuju karier global di industri hospitality.</p>
+          <ul class="space-y-3">
+            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✔</span>Pelatihan berbasis praktek langsung</li>
+            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✔</span>Networking internasional</li>
+            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✔</span>Sertifikasi kompetensi profesional</li>
+            <li class="flex items-start"><span class="text-green-500 font-bold mr-2">✔</span>Fasilitas pelatihan lengkap dan modern</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+    <!-- Programs Section -->
+    <section class="bg-gradient-to-r text-white py-16 relative" style="background-image: url(img/bg.jpg)">
+      <div class="w-full h-full block absolute top-0">
+        <div class="w-full h-full opacity-[0.87]" style="background-image: url(img/video-overlay.jpg)"></div>
+      </div>
+      <div class="max-w-6xl mx-auto px-4 relative">
+        <h2 class="text-[50px] tracking-[-2px] font-bold mb-10 custom-after relative">
+          <span class="block opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">Our Programs</span>
+        </h2>
+        <div class="grid md:grid-cols-4 gap-14">
+          <!-- Program Card -->
+          <div class="bg-white text-gray-800 p-6 custom-card">
+            <div class="w-full h-[253px] rounded-2xl overflow-hidden mb-4 bg-center bg-cover" style="background-image: url('/img/photo-bg.jpg')">
+              <img src="/img/photo-1.jpg" class="w-full h-full object-cover object-top" />
+            </div>
+            <h3 class="text-xl font-bold absolute z-10 text-white leading-none left-0 top-[203px] opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">PROGRAM HOUSEKEEPING</h3>
+            <p class="text-[19px] font-semibold mb-2 z-10 relative opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">BENEFIT:</p>
+            <ul class="list-disc text-[12px] text-[#446eb3] font-light z-10 pl-3 mb-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <li>Pelatihan langsung di kamar praktik standar hotel</li>
+              <li>Sertifikasi kompetensi nasional & internasional</li>
+              <li>Pengenalan detail standar kebersihan & pelayanan hotel bintang 5</li>
+              <li>Kesempatan magang di dalam dan luar negeri</li>
+              <li>Free Konsultasi Peluang Karir di Luar Negeri</li>
+            </ul>
+            <a href="https://si.infinitycampus.id/registrasi.php" class="z-10 relative block bg-[#101746] text-white text-center font-semibold py-2.5 rounded-2xl opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">DAFTAR SEKARANG!</a>
+          </div>
+
+          <!-- Program Card -->
+          <div class="bg-white text-gray-800 p-6 custom-card">
+            <div class="w-full h-[253px] rounded-2xl overflow-hidden mb-4 bg-center bg-cover" style="background-image: url('/img/photo-bg.jpg')">
+              <img src="/img/photo-2.png" class="w-full h-full object-cover object-top" />
+            </div>
+            <h3 class="text-xl font-bold absolute z-10 text-white leading-none left-0 top-[203px] opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">PROGRAM F&B SERVICE</h3>
+            <p class="text-[19px] font-semibold mb-2 z-10 relative opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">BENEFIT:</p>
+            <ul class="list-disc text-[12px] text-[#446eb3] font-light z-10 pl-3 mb-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <li>Praktik langsung di ruang restaurant berstandar hotel</li>
+              <li>Pelatihan table manner dan service etiquette</li>
+              <li>Pengembangan komunikasi dan keterampilan customer service</li>
+              <li>Sertifikat yang diakui industri perhotelan global</li>
+              <li>Kesempatan magang & kerja di hotel ternama</li>
+            </ul>
+            <a href="https://si.infinitycampus.id/registrasi.php" class="z-10 relative block bg-[#101746] text-white text-center font-semibold py-2.5 rounded-2xl opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">DAFTAR SEKARANG!</a>
+          </div>
+
+          <!-- Program Card -->
+          <div class="bg-white text-gray-800 p-6 custom-card">
+            <div class="w-full h-[253px] rounded-2xl overflow-hidden mb-4 bg-center bg-cover" style="background-image: url('/img/photo-bg.jpg')">
+              <img src="/img/photo-3.png" class="w-full h-full object-cover object-top" />
+            </div>
+            <h3 class="text-xl font-bold absolute z-10 text-white leading-none left-0 top-[203px] opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">PROGRAM F&B PRODUCT</h3>
+            <p class="text-[19px] font-semibold mb-2 z-10 relative opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">BENEFIT:</p>
+            <ul class="list-disc text-[12px] text-[#446eb3] font-light z-10 pl-3 mb-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <li>Praktek langsung memasak menu nasional & internasional</li>
+              <li>Diajarkan oleh chef berpengalaman</li>
+              <li>Pembelajaran higienitas dan manajemen dapur</li>
+              <li>Meningkatkan kreativitas dalam plating & inovasi resep</li>
+              <li>Free Konsultasi Peluang Karir di Luar Negeri</li>
+            </ul>
+            <a href="https://si.infinitycampus.id/registrasi.php" class="z-10 relative block bg-[#101746] text-white text-center font-semibold py-2.5 rounded-2xl opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">DAFTAR SEKARANG!</a>
+          </div>
+
+          <!-- Program Card -->
+          <div class="bg-white text-gray-800 p-6 custom-card">
+            <div class="w-full h-[253px] rounded-2xl overflow-hidden mb-4 bg-center bg-cover" style="background-image: url('/img/photo-bg.jpg')">
+              <img src="/img/photo-4.png" class="w-full h-full object-cover object-top" />
+            </div>
+            <h3 class="text-xl font-bold absolute z-10 text-white leading-none left-0 top-[203px] opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">PROGRAM LKP (3 BULAN)</h3>
+            <p class="text-[19px] font-semibold mb-2 z-10 relative opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">JURUSAN:</p>
+            <ul class="list-disc text-[12px] text-[#446eb3] font-light z-10 pl-3 mb-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <li>Bahasa Inggris</li>
+              <li>Spa Therapist</li>
+            </ul>
+            <p class="text-[19px] font-semibold mb-2 z-10 relative opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">BENEFIT:</p>
+            <ul class="list-disc text-[12px] text-[#446eb3] font-light z-10 pl-3 mb-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <li>Praktek langsung dengan Instruktur Profesional</li>
+              <li>Free Kelas Etika Profesi</li>
+              <li>Free Konsultasi Peluang Karir di Luar Negeri</li>
+            </ul>
+            <a href="https://si.infinitycampus.id/registrasi.php" class="z-10 relative block bg-[#101746] text-white text-center font-semibold py-2.5 rounded-2xl opacity-0 translate-y-12 transition-all duration-1000 ease-out hero-animate delay-300">DAFTAR SEKARANG!</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Location Section -->
+    <section class="bg-white py-36 relative">
+      <div class="absolute block top-[30px] right-[30px] rotate-180 w-[79px] h-[79px]">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" version="1.0" viewBox="0.0 0.0 323.5 323.5" zoomAndPan="magnify" style="fill: rgb(68, 110, 179)" original_string_length="776" width="79px" height="79px">
+          <g id="__id0_siy9kdpmk6">
+            <path d="M319.53,284.016H68.102v-20.588H319.53c2.209,0,4-1.791,4-4s-1.791-4-4-4H68.102V4c0-2.209-1.791-4-4-4s-4,1.791-4,4 v251.428H39.514V4c0-2.209-1.791-4-4-4s-4,1.791-4,4v251.428H4c-2.209,0-4,1.791-4,4s1.791,4,4,4h27.514v20.588H4 c-2.209,0-4,1.791-4,4s1.791,4,4,4h27.514v27.514c0,2.209,1.791,4,4,4s4-1.791,4-4v-27.514h20.588v27.514c0,2.209,1.791,4,4,4 s4-1.791,4-4v-27.514H319.53c2.209,0,4-1.791,4-4S321.739,284.016,319.53,284.016z M39.514,284.016v-20.588h20.588v20.588H39.514z" style="fill: inherit" />
+          </g>
+        </svg>
+      </div>
+      <div class="absolute block bottom-[30px] left-[15px] md:left-[91px] w-[116px] h-[116px]">
+        <img src="/img/frame-2.png" />
+      </div>
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row gap-10">
+        <div class="md:flex-[55%] h-[400px] md:h-auto">
+          <iframe class="w-full h-full rounded" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7869.380789936421!2d115.1864!3d-8.59948!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd2392cee59ff3b%3A0xf78554cb560a0b77!2sINFINITY%20INFORMATION%20CENTRE%20(Kantor%20Pusat%20Informasi)!5e1!3m2!1sid!2sus!4v1756037387669!5m2!1sid!2sus" width="100%" height="100%" style="border: 0" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="relative pb-[200px] md:flex-[45%]">
+          <h2 class="text-6xl font-bold mb-4 text-[#101746] tracking-[-2.1587px] opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate">Temukan Kami di:</h2>
+          <ul class="space-y-3 font-montserrat font-light mb-5">
+            <li class="flex gap-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-75">
+              <img src="img/loc-icon.png" class="w-[27.5px] h-[42.47px]" />
+              <span>Jl. Raya Sempidi No.40, Sempidi, Kec. Mengwi, Kabupaten Badung, Bali 80351</span>
+            </li>
+            <li class="flex gap-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-100">
+              <img src="img/loc-icon.png" class="w-[27.5px] h-[42.47px]" />
+              <span>Jl. Taman Sari, Sempidi, Kec. Mengwi, Kabupaten Badung, Bali 80351</span>
+            </li>
+            <li class="flex gap-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-150">
+              <img src="img/ig-icon.png" class="w-[27.5px] h-auto" />
+              <span>KAMPUSINFINITY.ID</span>
+            </li>
+            <li class="flex gap-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-200">
+              <img src="img/ig-icon.png" class="w-[27.5px] h-auto" />
+              <span>INFINITY.CAREER.HUB</span>
+            </li>
+            <li class="flex gap-4 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-300">
+              <img src="img/ig-icon.png" class="w-[27.5px] h-auto" />
+              <span>INFINITYTRAININGCENTRE</span>
+            </li>
+          </ul>
+          <div class="absolute right-0 bottom-0 text-center">
+            <span class="block font-bold mb-1 opacity-0 translate-x-[-3rem] transition-all duration-1000 ease-out hero-animate delay-400">Informasi Lebih Lanjut</span>
+            <div class="w-[179px] h-[179px]">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#fff" style="fill: #fff" viewBox="0 0 25 25" original_string_length="1435" width="100%" height="auto">
+                <path d="M0 0h25v25H0z" style="fill: inherit" />
+                <path d="M0 0.5h7m1 0h1m2 0h1m3 0h2m1 0h7M0 1.5h1m5 0h1m5 0h1m2 0h2m1 0h1m5 0h1M0 2.5h1m1 0h3m1 0h1m1 0h3m1 0h1m2 0h1m2 0h1m1 0h3m1 0h1M0 3.5h1m1 0h3m1 0h1m3 0h2m4 0h1m1 0h1m1 0h3m1 0h1M0 4.5h1m1 0h3m1 0h1m4 0h1m4 0h1m1 0h1m1 0h3m1 0h1M0 5.5h1m5 0h1m1 0h2m8 0h1m5 0h1M0 6.5h7m1 0h1m1 0h1m1 0h1m1 0h1m1 0h1m1 0h7M9 7.5h1m1 0h3m2 0h1M0 8.5h1m1 0h1m3 0h2m1 0h1m1 0h1m3 0h1m3 0h1m2 0h1m1 0h1M0 9.5h1m2 0h1m1 0h1m1 0h1m2 0h1m1 0h5m1 0h1m2 0h1m1 0h2M1 10.5h1m2 0h4m1 0h2m1 0h1m2 0h2m3 0h3m1 0h1M0 11.5h1m1 0h1m5 0h1m1 0h1m4 0h2m1 0h1m2 0h1M2 12.5h1m3 0h1m1 0h1m2 0h3m1 0h1m2 0h2m4 0h1M4 13.5h1m2 0h3m2 0h1m2 0h1m2 0h2m3 0h2M0 14.5h3m2 0h2m2 0h1m2 0h5m4 0h2m1 0h1M2 15.5h1m1 0h1m2 0h1m2 0h3m4 0h1m1 0h1M0 16.5h4m2 0h1m1 0h2m3 0h8m2 0h1M8 17.5h1m1 0h1m2 0h1m1 0h2m3 0h1m1 0h1m1 0h1M0 18.5h7m1 0h2m1 0h1m3 0h2m1 0h1m1 0h2m2 0h1M0 19.5h1m5 0h1m3 0h1m2 0h1m2 0h1m3 0h1m2 0h1M0 20.5h1m1 0h3m1 0h1m2 0h1m1 0h3m1 0h7M0 21.5h1m1 0h3m1 0h1m3 0h1m1 0h1m2 0h3m1 0h4M0 22.5h1m1 0h3m1 0h1m1 0h1m1 0h1m1 0h3m2 0h1m2 0h1m2 0h2M0 23.5h1m5 0h1m4 0h2m1 0h1m1 0h2m1 0h2M0 24.5h7m1 0h1m4 0h4m1 0h1m2 0h1m2 0h1" stroke="#000" style="fill: inherit" />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/youtube-background/jquery.youtube-background.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
+  </body>
+</html>

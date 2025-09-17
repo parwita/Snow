@@ -1,0 +1,17 @@
+{
+  "name": "snow",
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev-css": "npx @tailwindcss/cli -i ./src/main.css -o ./assets/main.css --watch",
+    "dev-js": "watchify ./src/main.js -o-p esmify > ./assets/main.js"
+  },
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.11",
+    "browserify": "^17.0.1",
+    "esmify": "^2.1.1",
+    "tailwindcss": "^4.1.11",
+    "watchify": "^4.0.0",
+    "youtube-background": "^1.1.8"
+  }
+}

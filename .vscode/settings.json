@@ -1,0 +1,11 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.formatOnSave": true,
+    "html.format.preserveNewLines": true,
+    "prettier.bracketSameLine": true,
+    "prettier.proseWrap": "preserve",
+    "prettier.bracketSpacing": true,
+    "prettier.singleQuote": false,
+    "prettier.singleAttributePerLine": false,
+    "prettier.printWidth": 99999
+}

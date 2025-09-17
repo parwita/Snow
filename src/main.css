@@ -1,0 +1,55 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+@import "tailwindcss";
+@theme {
+  --font-public: "Public Sans", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+.custom-after::after {
+  content: "";
+  display: block;
+  width: calc(100% - 320px);
+  height: 3px;
+  background-color: white;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.custom-card {
+  border-radius: 25px;
+  box-shadow: 11px 12px 14px -4px rgba(0, 0, 0, 0.65);
+  -webkit-box-shadow: 11px 12px 14px -4px rgba(0, 0, 0, 0.65);
+  -moz-box-shadow: 11px 12px 14px -4px rgba(0, 0, 0, 0.65);
+  position: relative;
+}
+.custom-card::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 194px;
+  background-image: url("/img/frame.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 246px;
+  height: 100px;
+  left: -28px;
+  z-index: 1;
+}
+
+@media only screen and (max-width: 40rem) {
+  .custom-after::after {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 48rem) {
+  .custom-card::before {
+    width: 469px;
+    height: 116px;
+    left: -38px;
+    max-width: 100%;
+  }
+}
