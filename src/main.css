@@ -5,6 +5,17 @@
   --font-montserrat: "Montserrat", sans-serif;
 }
 
+@font-face {
+  font-family: "lazy_dogregular";
+  src: url("../assets/font/lazy_dog-webfont.woff2") format("woff2"), url("../assets/font/lazy_dog-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.font-lazydog {
+  font-family: "lazy_dogregular";
+}
+
 .custom-after::after {
   content: "";
   display: block;
