@@ -19,6 +19,8 @@
     --color-gray-800: oklch(27.8% 0.033 256.848);
     --color-white: #fff;
     --spacing: 0.25rem;
+    --container-xl: 36rem;
+    --container-2xl: 42rem;
     --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
@@ -232,6 +234,12 @@
   .top-\[203px\] {
     top: 203px;
   }
+  .top-\[208px\] {
+    top: 208px;
+  }
+  .top-\[210px\] {
+    top: 210px;
+  }
   .right-0 {
     right: calc(var(--spacing) * 0);
   }
@@ -321,6 +329,9 @@
   }
   .mb-10 {
     margin-bottom: calc(var(--spacing) * 10);
+  }
+  .mb-15 {
+    margin-bottom: calc(var(--spacing) * 15);
   }
   .block {
     display: block;
@@ -454,6 +465,9 @@
   .w-full {
     width: 100%;
   }
+  .max-w-2xl {
+    max-width: var(--container-2xl);
+  }
   .max-w-3xl {
     max-width: var(--container-3xl);
   }
@@ -498,6 +512,9 @@
   }
   .max-w-full {
     max-width: 100%;
+  }
+  .max-w-xl {
+    max-width: var(--container-xl);
   }
   .translate-x-0 {
     --tw-translate-x: calc(var(--spacing) * 0);
@@ -708,6 +725,15 @@
   }
   .py-16 {
     padding-block: calc(var(--spacing) * 16);
+  }
+  .py-20 {
+    padding-block: calc(var(--spacing) * 20);
+  }
+  .py-24 {
+    padding-block: calc(var(--spacing) * 24);
+  }
+  .py-30 {
+    padding-block: calc(var(--spacing) * 30);
   }
   .py-36 {
     padding-block: calc(var(--spacing) * 36);
